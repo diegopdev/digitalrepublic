@@ -20,6 +20,10 @@ module.exports = {
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single'],
     'jsx-quotes': ['error', 'prefer-single'],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'import/prefer-default-export': ['off'],
+    'import/named': ['off'],
+    'import/no-named-as-default': ['off'],
+    'import/no-named-as-default-member': ['off']
   }
 }
