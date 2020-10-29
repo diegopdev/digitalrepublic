@@ -3,12 +3,12 @@ import { colors } from './colors'
 
 export default createGlobalStyle`
   @font-face {
-      font-family: helveticaneue;
+      font-family: mont;
       src: url("Montserrat-Regular.ttf");
   }
   @font-face {
       font-family: calibri;
-      src: url("Calibri 400.ttf");
+      src: url("Calibri400.ttf");
   }
   * {
     margin: 0;
