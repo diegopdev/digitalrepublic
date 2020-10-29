@@ -5,7 +5,7 @@ import { colors } from '../../utils/colors'
 export const Box = styled.a`
   width: 370px;
   height: 370px;
-  margin: 0 1.7rem 1.7rem 0;
+  margin-bottom: 1.7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,11 @@ export const Box = styled.a`
       color: ${colors.orange};
     }
   }
+
+  @media (max-width: 1025px) {
+    width: 350px;
+    margin 1.7em;
+  }
 `
 export const Title = styled.h3`
   font-family: mont;
@@ -31,6 +36,7 @@ export const Title = styled.h3`
   font-weight: bold;
   color: ${colors.black};
   position: relative;
+  max-width: 295px;
   &:before {
     content: '';
     width: 160px;
@@ -40,11 +46,16 @@ export const Title = styled.h3`
     position: absolute;
   }
   margin-top: 48px;
+
+  @media (max-width: 768px) {
+    font-size: 1.8em;
+    max-width: 150px;
+  }
 `
 
 export const KnowMore = styled.p`
   color: ${colors.black};
-  font-size: 22px;
+  font-size: 1.375em;
   transition: 150ms linear;
   margin-top: 48px;
 `
