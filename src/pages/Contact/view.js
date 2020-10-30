@@ -13,8 +13,7 @@ import {
   Footer,
   Information,
   Form,
-  TextSuccess,
-  Animation
+  TextSuccess
 } from './styles'
 
 const View = ({ onChange, form, onClickNext, onClickPrev, step }) => (
@@ -37,15 +36,13 @@ const View = ({ onChange, form, onClickNext, onClickPrev, step }) => (
 
         <Form>
           {step === 1 && (
-            <Animation animation={step === 1}>
-              <Input
-                placeholder='Qual o seu nome?'
-                name='name'
-                value={form.name}
-                onChange={onChange}
-                onClickNext={onClickNext}
-              />
-            </Animation>
+            <Input
+              placeholder='Qual o seu nome?'
+              name='name'
+              value={form.name}
+              onChange={onChange}
+              onClickNext={onClickNext}
+            />
           )}
 
           {step === 2 && (
