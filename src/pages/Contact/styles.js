@@ -51,8 +51,3 @@ export const TextSuccess = styled.p`
   font-size: 2em;
   font-family: mont;
 `
-
-export const Animation = styled.div`
-  opacity: ${(props) => (props.animation ? 1 : 0)};
-  transition: 150ms linear;
-`
