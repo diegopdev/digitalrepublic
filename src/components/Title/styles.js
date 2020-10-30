@@ -8,7 +8,7 @@ export const Text = styled.h3`
   font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
-  color: ${colors.black};
+  color: ${(props) => props.color};
   position: relative;
   &:before {
     content: '';

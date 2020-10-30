@@ -4,11 +4,11 @@ import { colors } from './colors'
 export default createGlobalStyle`
   @font-face {
       font-family: mont;
-      src: url("Montserrat-Regular.ttf");
+      src: url("../assets/fonts/Montserrat-Regular.ttf") format('ttf');
   }
   @font-face {
       font-family: calibri;
-      src: url("Calibri400.ttf");
+      src: url("./assets/fonts/Calibri400.ttf") format('ttf');
   }
   * {
     margin: 0;

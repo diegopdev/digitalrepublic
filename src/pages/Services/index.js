@@ -20,7 +20,7 @@ const Services = () => (
       </WrapperTitle>
       <WrapperServices>
         {services.map((service) => (
-          <CardService title={service} />
+          <CardService key={service} title={service} />
         ))}
       </WrapperServices>
     </Wrapper>
